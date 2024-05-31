@@ -3,33 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ホームページ</title>
-    <link rel="stylesheet" href="css/styles.css"> <!-- CSSファイルのリンク -->
-    <script defer src="js/script.js"></script> <!-- JavaScriptファイルのリンク -->
+    <title>base homepage</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
+	
 <body>
-    <header class="header">
-        <div class="logo">無差別QRコード事件</div>
-        <button class="menu-toggle" aria-label="メニューを開閉">☰</button>
-        <nav class="nav">
-            <ul>
-                <li><a href="page1.html">ページ1</a></li>
-                <li><a href="page2.html">ページ2</a></li>
-				<li><a href="page3.html">ページ3</a></li>
-				<li><a href="page4.html">ページ4</a></li>
-				<li><a href="page5.html">ページ5</a></li>
-				<li><a href="page6.html">ページ6</a></li>
-				<li><a href="page7.html">ページ7</a></li>
-				<li><a href="page8.html">ページ8</a></li>
-				<li><a href="page9.html">ページ9</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="container">
-        <h1>ホームページ</h1>
-        <p>以下のリンクをクリックして別のページに移動します。</p>
-        <img src="home_image.jpg" alt="ホームページの画像" class="responsive-image">
-        
-    </div>
+    <nav>
+		<div class="logo">QRコード事件</div>
+        <span class="toggle open"><i class="fas fa-bars icon-ba"></i></span>
+        <span class="toggle close" style="display: none;"><i class="fas fa-times icon-ba"></i></span>
+        <ul class="menu">
+			<li><a href="base HP.html"><i class="fas fa-home menu-icon"></i>home</a></li>
+            <li><a href="heart.html"><i class="far fa-heart menu-icon"></i> ha-to</a></li>
+            <li><a href="sankaku.html"><i class="fas fa-caret-up menu-icon"></i> sankaku</a></li>
+            <li><a href="maru.html"><i class="far fa-circle menu-icon"></i> maru</a></li>
+			<li><a href="sikaku.html"><i class="far fa-square menu-icon"></i> sikaku</a></li>
+			<li><a href="batsu.html"><i class="fas fa-times menu-icon"></i> batsu</a></li>
+			<li><a href="clover.html"><i class=""></i> ♧  clover</a></li>
+			<li><a href="spade.html"><i class=""></i> ♠  spade</a></li>
+			<li><a href="dia.html"><i class=""></i> ♢  dia</a></li>
+			<li><a href="star.html"><i class="far fa-star menu-icon"></i> star</a></li>
+        </ul>
+    </nav>
+
+    <script src="script.js"></script>
 </body>
 </html>
