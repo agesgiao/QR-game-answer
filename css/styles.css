@@ -1,128 +1,169 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     margin: 0;
-    padding: 0;
+    background-image: url('image/neko.JPG');
+    background-size: cover; /* 画像をカバーするようにリサイズ */
+    background-position: center; /* 画像の位置を中央に設定 */
+    background-repeat: no-repeat; /* 画像を繰り返さない */
+    background-attachment: fixed; /* 背景画像を固定 */
+}
+body.about-bg{
+	background-image:url('image/heart.png');
+	background-size: cover; /* 画像をカバーするようにリサイズ */
+    background-position: center; /* 画像の位置を中央に設定 */
+    background-repeat: no-repeat; /* 画像を繰り返さない */
+    background-attachment: fixed; /* 背景画像を固定 */
 }
 
-.header {
+body.clover-bg{
+	background-image:url('image/panda.png');
+	background-size: cover; /* 画像をカバーするようにリサイズ */
+    background-position: center; /* 画像の位置を中央に設定 */
+    background-repeat: no-repeat; /* 画像を繰り返さない */
+    background-attachment: fixed; /* 背景画像を固定 */
+}
+
+body.dia-bg{
+	background-image:url('image/tiger.png');
+	background-size: cover; /* 画像をカバーするようにリサイズ */
+    background-position: center; /* 画像の位置を中央に設定 */
+    background-repeat: no-repeat; /* 画像を繰り返さない */
+    background-attachment: fixed; /* 背景画像を固定 */
+}
+
+body.star-bg{
+	background-image:url('image/hari.png');
+	background-size: cover; /* 画像をカバーするようにリサイズ */
+    background-position: center; /* 画像の位置を中央に設定 */
+    background-repeat: no-repeat; /* 画像を繰り返さない */
+    background-attachment: fixed; /* 背景画像を固定 */
+}
+
+body.maru-bg{
+	background-image:url('image/fox.png');
+	background-size: cover; /* 画像をカバーするようにリサイズ */
+    background-position: center; /* 画像の位置を中央に設定 */
+    background-repeat: no-repeat; /* 画像を繰り返さない */
+    background-attachment: fixed; /* 背景画像を固定 */
+}
+
+body.sankaku-bg{
+	background-image:url('image/urf.png');
+	background-size: cover; /* 画像をカバーするようにリサイズ */
+    background-position: center; /* 画像の位置を中央に設定 */
+    background-repeat: no-repeat; /* 画像を繰り返さない */
+    background-attachment: fixed; /* 背景画像を固定 */
+}
+
+body.batsu-bg{
+	background-image:url('image/lion.png');
+	background-size: cover; /* 画像をカバーするようにリサイズ */
+    background-position: center; /* 画像の位置を中央に設定 */
+    background-repeat: no-repeat; /* 画像を繰り返さない */
+    background-attachment: fixed; /* 背景画像を固定 */
+}
+
+body.spade-bg{
+	background-image:url('image/wasi.png');
+	background-size: cover; /* 画像をカバーするようにリサイズ */
+    background-position: center; /* 画像の位置を中央に設定 */
+    background-repeat: no-repeat; /* 画像を繰り返さない */
+    background-attachment: fixed; /* 背景画像を固定 */
+}
+
+body.sikaku-bg{
+	background-image:url('image/rabit.png');
+	background-size: cover; /* 画像をカバーするようにリサイズ */
+    background-position: center; /* 画像の位置を中央に設定 */
+    background-repeat: no-repeat; /* 画像を繰り返さない */
+    background-attachment: fixed; /* 背景画像を固定 */
+}
+
+nav {
     background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 25px; /* ナビゲーションバーのパディングを増やす */
     position: relative;
+    text-align: right; /* メニューバーを右揃え */
 }
 
-.logo {
-    font-size: 1.5em;
-}
-
-.menu-toggle {
-    font-size: 1.5em;
-    background: none;
-    border: none;
+.toggle {
     color: white;
+    font-size: 32px; /* フォントサイズを大きくする */
     cursor: pointer;
-    display: none; /* 初期状態では非表示 */
+    display: inline-block;
+    padding: 0px; /* ボタンのパディングを増やす */
+}
+/*
+.toggle.open {
+    background-color: #4CAF50; /* メニューボタンの背景色を変更 */
+    /* その他のスタイルは既存のものを適用 */
+/*    cursor: pointer;
+    display: inline-block;
+    padding: 17px;
 }
 
-.nav ul {
+.toggle.close {
+    background-color: #4CAF50; /* メニューボタンの背景色を変更 */
+    /* その他のスタイルは既存のものを適用 */
+ /*   cursor: pointer;
+    display: inline-block;
+    padding: 17px;
+}
+*/
+
+.logo{
+	display: flex;
+    align-items: center;
+    color: white;
+	flex-direction: column;
+    position: absolute;
+    top: 28px;
+    left: 10px; 
+    text-decoration: none;
+    font-size: 28px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.menu {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: none; /* 初期状態でメニューを非表示 */
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* メニューの表示位置を調整 */
+    right: 10px; /* メニューを右側に配置 */
+    background-color: #333;
+    border: 1px solid #575757;
+    width: 250px; /* メニューの幅を広くする */
+}
+
+.menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.menu li a {
     display: flex;
-}
-
-.nav li {
-    margin-left: 20px;
-}
-
-.nav a {
+    align-items: center;
     color: white;
+    text-align: left;
+    padding: 20px; /* メニュー項目のパディングを増やす */
     text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 3px;
+    font-size: 18px; /* メニュー項目のフォントサイズを大きくする */
 }
 
-.nav a:hover {
-    background-color: #555;
+.menu li a:hover {
+    background-color: #575757;
 }
 
-.container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 90%;
-    max-width: 300px;
-    box-sizing: border-box;
-    margin: 20px auto;
+.menu-icon {
+    margin-right: 12px; /* アイコンとテキストの間に余白を追加 */
+    font-size: 24px; /* アイコンのサイズを大きくする */
 }
 
-a {
-    display: block;
-    margin: 10px 0;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-}
-
-a:hover {
-    background-color: #0056b3;
-}
-
-.responsive-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-/* 新しいCSSクラスを追加 */
-.links-container {
-    display: flex;
-    justify-content: flex-end; /* 右揃え */
-    width: 100%; /* コンテナの幅を調整 */
-    box-sizing: border-box;
-}
-
-/* メディアクエリを追加 */
-@media (max-width: 600px) {
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-
-    a {
-        margin: 5px 0;
-        padding: 8px 16px;
-    }
-
-    .links-container {
-        justify-content: center; /* 小さな画面では中央揃え */
-    }
-
-    .nav ul {
-        flex-direction: column; /* メニュー項目を縦方向に並べる */
-        align-items: flex-start;
-        display: none; /* 初期状態では非表示 */
-    }
-
-    .nav ul.show {
-        display: flex; /* ボタンを押したときに表示 */
-    }
-
-    .nav li {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    .menu-toggle {
-        display: block; /* 小さな画面では表示 */
-    }
+.icon-ba {
+    font-size: 40px;
 }
