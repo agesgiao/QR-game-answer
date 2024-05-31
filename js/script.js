@@ -1,8 +1,20 @@
+// script.js
 document.addEventListener('DOMContentLoaded', function() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('.nav ul');
+    var openButton = document.querySelector('.open');
+    var closeButton = document.querySelector('.close');
+    var menu = document.querySelector('.menu');
 
-    menuToggle.addEventListener('click', function() {
-        navMenu.classList.toggle('show');
+    openButton.addEventListener('click', function() {
+        menu.style.display = 'block';
+        openButton.style.display = 'none';
+        closeButton.style.display = 'inline';
+    });
+
+    closeButton.addEventListener('click', function() {
+        menu.style.display = 'none';
+        openButton.style.display = 'inline';
+        closeButton.style.display = 'none';
+		
+		
     });
 });
